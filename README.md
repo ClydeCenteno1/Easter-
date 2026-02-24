@@ -1,45 +1,138 @@
-# Easter - E-Commerce Landing Page
+# Easter-
 
-A responsive, front-end landing page template built with HTML5 and Bootstrap 5. This project is structured like a modern online marketplace (reminiscent of platforms like Etsy), featuring a clean navigation bar, promotional hero banners, and a featured products section.
+**Make Easter extra-special with these unique finds** — a clean, responsive Bootstrap landing page / storefront hero prototype built with semantic HTML, Bootstrap 5, and a small custom stylesheet for polish (hover effects, shadows, subtle UI details).
+
+---
+
+## Table of Contents
+
+* [Preview](#preview)
+* [Features](#features)
+* [Tech](#tech)
+* [Files](#files)
+* [Install & Run Locally](#install--run-locally)
+* [Customization Tips](#customization-tips)
+* [Accessibility & Performance](#accessibility--performance)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+
+---
+
+## Preview
+
+Open `index.html` in your browser or serve the folder locally (see *Install & Run Locally*).
+Replace placeholder images (`flower1.jpg`, `img2.jpg`, etc.) with your real assets.
+
+---
 
 ## Features
 
-* **Responsive Navigation:** Includes a collapsible hamburger menu for mobile devices, a flexible search bar, and quick-access icons for user accounts, favorites, and carts.
-* **Hero Banner:** A prominent promotional section designed to highlight seasonal finds and drive user engagement with clear calls to action.
-* **Featured Categories:** A responsive image grid showcasing curated interests (e.g., *Color of the Year*, *Handcrafted Home*) utilizing Bootstrap's responsive grid system.
-* **Informational Footer:** A clean footer containing sections for community values, creator support, and a help center link.
+* Mobile-first responsive layout with a hero section and clear CTA.
+* Search bar and simple navigation with Font Awesome icons.
+* Featured items grid with image cards and captions.
+* Footer with informational sections and help center CTA.
+* Subtle custom CSS for hover transitions and image shadows.
+* Minimal external dependencies — easy to customize and deploy.
 
-## Technologies Used
+---
 
-* **HTML5:** Semantic page structure.
-* **Bootstrap 5.3:** Utility classes and responsive grid layout (loaded via CDN).
-* **Font Awesome 4.7.0:** Vector icons for the UI navigation and buttons (loaded via CDN).
+## Tech
 
-## Getting Started
+* Bootstrap — responsive grid & utilities (CDN)
+* Font Awesome — icons via CDN
+* Python — optional (for serving locally with `python -m http.server`)
 
-Because this is a static HTML project, you do not need any complex build tools or package managers to run it locally.
+---
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/yourusername/easter-landing-page.git](https://github.com/yourusername/easter-landing-page.git)
-    ```
-2.  **Navigate to the directory:**
-    ```bash
-    cd easter-landing-page
-    ```
-3.  **Add Image Assets:** The HTML references several local images. To ensure the page renders correctly, please add placeholder images with the following filenames to the same directory as your `index.html` file (or update the image `src` paths to match your own assets):
-    * `flower1.jpg`
-    * `img2.jpg`
-    * `chair.jpg`
-    * `fairytale.jpg`
-    * `handcraftedhome.jpg`
-    * `wavy.jpg`
-4.  **Run the project:** Open the `index.html` file directly in any modern web browser.
+## Files
+
+```
+index.html
+styles.css
+flower1.jpg
+img2.jpg
+chair.jpg
+fairytale.jpg
+handcraftedhome.jpg
+wavy.jpg
+README.md
+LICENSE (suggested)
+```
+
+---
+
+## Install & Run Locally
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/ClydeCenteno1/Easter-.git
+cd Easter-
+```
+
+2. Open `index.html` directly in any modern browser, or serve with a simple HTTP server for testing relative assets:
+
+```bash
+# Python 3
+python -m http.server 8000
+# Then open http://localhost:8000
+```
+
+---
+
+## Customization Tips
+
+* Replace image placeholders with optimized assets (consider WebP for performance).
+* Add descriptive `alt` attributes to all `<img>` tags for accessibility & SEO.
+* Use `loading="lazy"` on non-critical images to improve initial load.
+* Edit hero text by updating the `<h1 class="display-4">` in `index.html`.
+* Swap Bootstrap utility classes (e.g., `bg-warning`) to match your brand palette or add custom rules in `styles.css`.
+* Consider upgrading to a modern Font Awesome CDN or another icon set if you need more icons.
+
+---
+
+## Accessibility & Performance
+
+* Ensure every image has meaningful `alt` text.
+* Check text/background contrast ratios to meet WCAG AA where applicable.
+* Minify CSS for production and serve static assets via a CDN when possible.
+* Use responsive image techniques (`srcset`) if you introduce multiple image sizes.
+
+---
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+Contributions are welcome!
+
+Suggested workflow:
+
+1. Fork the repo.
+2. Create a branch: `git checkout -b feat/your-feature`
+3. Commit your changes: `git commit -m "feat: short description"`
+4. Push your branch: `git push origin feat/your-feature`
+5. Open a Pull Request describing your change.
+
+Commit message style (recommended):
+
+```
+<type>(scope): short description
+# e.g. feat(nav): add mobile categories menu
+```
+
+---
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is a good fit for the **MIT License** (simple, permissive).
+To add it, create a `LICENSE` file in the repository and paste the MIT license text, setting the copyright holder.
+
+If you’d like, I can generate the exact MIT `LICENSE` text and a ready-to-add `LICENSE` file for you.
+
+---
+
+## Contact
+
+Maintained by ClydeCenteno1 — open issues or PRs on GitHub for changes, suggestions, or help.
+
+---
